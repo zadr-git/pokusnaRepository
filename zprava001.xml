@@ -1,0 +1,15 @@
+<zprava001>
+    <hlavicka>
+        <udajA>Lukas</udajA>
+        <udajB>Zadrazil</udajB>
+    </hlavicka>
+    <obecneUdaje>
+        <vek>34</vek>
+    </obecneUdaje>
+    <polozka>
+        <cisloPolozky>1</cisloPolozky>
+    </polozka>
+    <polozka>
+        <cisloPolozky>2</cisloPolozky>
+    </polozka>
+</zprava001>
