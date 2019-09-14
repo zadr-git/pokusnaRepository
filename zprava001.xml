@@ -10,6 +10,8 @@
         <cisloPolozky>1</cisloPolozky>
     </polozka>
     <polozka>
-        <cisloPolozky>2</cisloPolozky>
+        <dite>
+            <jmeno>Tomasek</jmeno>
+        </dite>
     </polozka>
 </zprava001>
