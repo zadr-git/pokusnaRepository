@@ -1,0 +1,54 @@
+﻿Scénáře:
+1) pořídit H5 EU deklaraci z EXT UI
+- ručně od začátku
+- draft
+- template
+- jako kopii již existující
+... ukázat navrhovaný výměr daně
+
+2) opravit takto pořízenou deklaraci v EXT UI
+
+3) channel change funkčnost
+- v EXT UI (zatím jen DME vs.UTU)
+- v INT UI - jen ukázat stav
+
+4) TARIC + Rahje => service charge
+- v EXT UI pořídit deklaraci (H1) se dvěma položkama, na kterou bude vytvořený measure
+... na první položce jen ukázat defaultní VAT a přidaný Natial additional code z Taricu
+... okomentovat, že 
+... ... po dotažení zbožového kódu přijdou z TARICu additional kódy a všechny kromě Q řady jsou nabízeny v TARIC additional kódech, jen Q řadu  reprezentuje VAT radio 
+... ... 0% DPH nikde neukazujeme, ale je ji možno napsat do National kódů
+... na druhé položce změnit daň na 10% a ukázat i změnu National kódu
+... před pořízením ukázat navrhovaný výměr daně (zmínit, že to nemusí trader přijmout)
+- zobrazit pořízenou deklaraci v EXT UI
+... ukázat, že rozpad daně je totožný
+... ukázat kurzy použitých měn
+- v INT UI zobrazit totožnou deklaraci
+- přidat service charge (všechny tři typy pro celou položku a jediný možný pro druhou položku)
+- ukázta, že v EXT UI se trader zatím nic nedozvěděl
+- ukončit manuální zpracování a propustit do stavu Waiting for Payment - kdyžtak se domluvit s Mirkem, kde nastavit co
+... chvíli mluvit, aby vše doběhlo
+- v Summaray EXT UI ukázat aktualizovaný výpočet daně (už přišla FI468A) a ukázat novou skupinu Payment (částka k zaplacení, do kdy, stav platby)
+- následně ukázat změnu u propuštěné deklarace
+- přepnout se do INT UI a ukázat totožnou skupinu Payments v Summary
+- ukázat, že nyní již service charge nemůžeme upravovat
+- v case history ukázat nové eventy
+- v ECMC ukázat komplet datovou výměnu
+
+5) TARIC + Rahje II => Manual calculation
+- v EXT UI pořídit deklaraci, která má právě dvě položky a bude mít vytvořený measure
+- v INT UI ji otevřít a druhou položku označit jako manuálně vypočtenou
+... okomentovat změny v UI
+- deklaraci zavřít (celník se rozhodl a šel domů/na oběd)
+- přes F5 (=druhý den) deklaraci znovu otevřeme (ukážeme, že se nic nezměnilo) a zrušíme manual calculation (abysme ho následně udělali na 1. položce) 
+- ukážeme přepočtený dluh v Summary
+- ukončíme manuální zpracování a propustíme
+- v EXT UI ukážeme již propuštěnou deklaraci (= celní dluh byl již vybrán), že se data promítla a dál to již nejde upravovat
+
+6) Rahje
+- v INT a EXT UI si ukážeme deklarace ve stavu (jedním z nich) Waiting for Rahje communication / Waiting for Payment a ukážeme si, co lze s deklarací dělat
+... INT, EXT UI - přidat note, zrušit deklaraci
+... zmínit, že Rahje se o tom nedozví, Invalidation není hotové (pro Tuttu tam tuším chybí nějaké zadání)
+
+7) TUTTU - ??? Vena
+8) Surveillance - Kulík
