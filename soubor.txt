@@ -2,7 +2,7 @@ pokusny obsah vytvořeného souboru
 radek 1
 radek 2
 radek 3
-radek 4
+radek 4 - kuk
 radek 5
 radek 6
 konec obsahu pokusného souboru
