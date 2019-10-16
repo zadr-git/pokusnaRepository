@@ -6,19 +6,15 @@
     <obecneUdaje>
         <vek>34</vek>
     </obecneUdaje>
-    <polozka>
-        <cisloPolozky>1</cisloPolozky>
+    <rodina>
         <manzelka>
             <jmeno>Martina</jmeno>
             <prijmeniZaSvobodna>Zívalová</prijmeniZaSvobodna>
             <inicialy>MZ</inicialy>
         </manzelka>
-    </polozka>
-    <polozka>
-        <cisloPolozky>2<cisloPolozky>
         <dite>
             <jmeno>Tomasek</jmeno>
             <datumNarozeni>03.12.2018</datumNarozeni>
         </dite>
-    </polozka>
+    </rodina>
 </zprava001>
